@@ -77,4 +77,4 @@ Penn State University – B.S. in Computer Engineering
 Blue Band Trombone Section • Bluecoats 2025
 
 GitHub: https://github.com/Nick-Coffield
-LinkedIn: [https://linkedin.com/in/nick-coffield](https://www.linkedin.com/in/nicholas-coffield-3a661a330/)
+LinkedIn: https://www.linkedin.com/in/nicholas-coffield-3a661a330/
