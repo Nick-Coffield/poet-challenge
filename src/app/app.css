@@ -1,0 +1,228 @@
+/* ========= Modern Minimal — Defined Layout with Outlines ========= */
+
+/* Base theme */
+:root {
+  --bg: #f6f6f7;
+  --text: #111;
+  --muted: #5a5f6b;
+  --card: #ffffff;
+  --border: #000;
+  --radius: 10px;
+}
+
+/* Reset and base font */
+* { box-sizing: border-box; }
+html, body { height: 100%; margin: 0; }
+body {
+  background: var(--bg);
+  color: var(--text);
+  font-family: system-ui, -apple-system, "Segoe UI", Roboto, Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+}
+
+/* App container */
+.app-shell {
+  display: flex;
+  justify-content: center;
+  padding: 32px 16px;
+}
+.container {
+  width: 100%;
+  max-width: 900px;
+  background: var(--card);
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 24px 28px;
+}
+
+/* Headings */
+h1, h2 {
+  margin: 0 0 12px;
+  font-weight: 800;
+  color: var(--text);
+}
+h1 {
+  font-size: 30px;
+  border-bottom: 2px solid var(--border);
+  padding-bottom: 6px;
+  margin-bottom: 20px;
+}
+h2 {
+  font-size: 20px;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 4px;
+  margin-bottom: 12px;
+}
+
+/* Cards (sections) */
+.card {
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: var(--card);
+  padding: 20px;
+  margin-bottom: 24px;
+}
+
+/* Grid & layout */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+}
+.align-end { align-items: end; }
+.controls {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-top: 14px;
+}
+.spacer { flex: 1; }
+
+/* Fields */
+label.field .label {
+  display: block;
+  font-size: 13px;
+  color: var(--muted);
+  font-weight: 700;
+  margin-bottom: 6px;
+}
+input[type="text"] {
+  width: 100%;
+  padding: 10px 12px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  font-size: 16px;
+  color: var(--text);
+  background: #fff;
+}
+input[type="text"]:focus { outline: none; border-color: var(--border); }
+
+/* Checkbox */
+.checkbox { display: inline-flex; align-items: center; gap: 8px; color: var(--muted); font-weight: 600; }
+
+/* Buttons */
+button, .btn {
+  background: #fff;
+  color: #000;
+  border: 2px solid #000;
+  border-radius: var(--radius);
+  font-weight: 800;
+  padding: 10px 16px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+button:hover, .btn:hover {
+  background: #000;
+  color: #fff;
+}
+button[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+.btn-sm {
+  font-size: 14px;
+  padding: 6px 10px;
+}
+
+/* Word tools section */
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 10px;
+  padding-bottom: 4px;
+}
+.button-row {
+  display: flex;
+  gap: 10px;
+  justify-content: flex-end;
+}
+
+/* Results */
+.results {
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  padding: 16px;
+  background: var(--card);
+}
+.list { list-style: none; padding: 0; margin: 0; }
+.list-item { margin-bottom: 12px; }
+
+/* Poem rows */
+.row-btn {
+  width: 100%;
+  text-align: left;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 12px 14px;
+  cursor: pointer;
+}
+.row-btn:hover {
+  background: #f0f0f0;
+}
+.lead .title { font-weight: 800; font-size: 18px; }
+.lead .author { font-size: 14px; color: var(--muted); font-weight: 600; }
+
+.row-right { display: flex; align-items: center; gap: 8px; }
+.chev { font-weight: 800; font-size: 16px; }
+
+.panel {
+  margin-top: 8px;
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 12px;
+}
+.panel-actions {
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 8px;
+}
+
+/* Poem */
+.poem {
+  white-space: pre-wrap;
+  margin: 0;
+  line-height: 1.75;
+  font-size: 17px;
+  font-family: ui-serif, Georgia, Cambria, "Times New Roman", Times, serif;
+  color: var(--text);
+}
+
+/* Status & errors */
+.status { color: var(--muted); font-weight: 600; margin-top: 10px; }
+.notice {
+  border: 2px solid var(--border);
+  border-radius: var(--radius);
+  background: #fff;
+  padding: 10px;
+  margin-top: 12px;
+}
+.error { background: #ffe8e8; color: #8b0000; }
+
+/* Misc small elements */
+.meta { color: var(--muted); font-size: 14px; font-weight: 600; }
+.muted { color: var(--muted); }
+.pad-s { padding-top: 6px; }
+.foot {
+  margin-top: 24px;
+  border-top: 2px solid var(--border);
+  padding-top: 12px;
+  text-align: center;
+  color: var(--muted);
+  font-size: 14px;
+}
+code {
+  border: 1px solid var(--border);
+  background: #fff;
+  border-radius: 6px;
+  padding: 1px 6px;
+  font-family: ui-monospace, Consolas, monospace;
+}
