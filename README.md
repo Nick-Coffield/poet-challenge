@@ -1,59 +1,80 @@
-# PoetChallenge
+# The Poet
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 20.3.8.
+Author: Nicholas Coffield  
+Tech Stack: Angular • TypeScript • PoetryDB API • HTML/CSS  
 
-## Development server
+A minimalist Angular web app that connects to the PoetryDB API to search poems by author or title, fetch random poems, and perform word-frequency analysis.  
+Built for clarity, simplicity, and accessibility.
 
-To start a local development server, run:
+---
 
+## Live Demo
+https://Nick-Coffield.github.io/poet-challenge/
+
+(Hosted via GitHub Pages — public and shareable.)
+
+---
+
+## Features
+- Search poems by author, title, or both  
+- Retrieve a random poem  
+- Case-insensitive search  
+- Optional "Find by Word" mode — shows poems where a word appears most frequently  
+- Displays word occurrence counts for each poem  
+- Clean, responsive interface  
+- Clear error and loading messages  
+
+---
+
+## Tech Stack
+| Category | Tools |
+|-----------|--------|
+| Frontend Framework | Angular 18 |
+| Language | TypeScript |
+| API Source | PoetryDB.org |
+| Styling | Custom CSS (accessible light theme) |
+| Hosting | GitHub Pages |
+
+---
+
+## Run Locally
 ```bash
+# 1. Clone the repository
+git clone https://github.com/Nick-Coffield/poet-challenge.git
+cd poet-challenge
+
+# 2. Install dependencies
+npm install
+
+# 3. Start the development server
 ng serve
-```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
+# Then open http://localhost:4200 in your browser
+Deploy to GitHub Pages
+bash
+Copy code
+# Build for production and output to the docs folder
+ng build --output-path docs --base-href /poet-challenge/
 
-## Code scaffolding
+# Commit and push the build
+git add .
+git commit -m "update build"
+git push
+Your live site will update automatically in about one to two minutes.
 
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
+Notes
+Uses Angular HttpClient for API calls
 
-```bash
-ng generate component component-name
-```
+Search is case-insensitive and trimmed
 
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
+Layout and design emphasize accessibility and simplicity
 
-```bash
-ng generate --help
-```
+Error handling and feedback are built in
 
-## Building
+Author
+Nicholas Coffield
+Penn State University – B.S. in Computer Engineering
+Blue Band Trombone Section • Bluecoats 2025
 
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+GitHub: https://github.com/Nick-Coffield
+LinkedIn: https://linkedin.com/in/nick-coffield
